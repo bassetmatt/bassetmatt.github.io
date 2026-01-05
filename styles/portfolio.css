@@ -1,0 +1,77 @@
+:root {
+    --bg-dark: #254e4d;
+    --bg-light: #c6e6e4;
+    --font-dark: #4ea8a7;
+    --font-light: #1d3e3d;
+
+    --bg: var(--bg-dark);
+    --font: var(--font-dark);
+    --border: var(--bg-light);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.project-card {
+    display: flex;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: var(--bg);
+}
+
+[data-theme="light"] {
+    --bg: var(--bg-light);
+    --font: var(--font-light);
+    --border: var(--bg-dark);
+}
+
+[data-theme="dark"] {
+    --bg: var(--bg-dark);
+    --font: var(--font-dark);
+    --border: var(--bg-light);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 1rem;
+    border-radius: 4px;
+}
+
+.project-content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.project-title {
+    margin-top: 0;
+    color: var(--font);
+}
+
+.project-summary {
+    margin-bottom: 0;
+}
+
+.project-links {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.project-links a {
+    color: var(--font);
+    text-decoration: none;
+    font-weight: bold;
+}

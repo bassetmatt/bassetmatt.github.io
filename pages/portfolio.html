@@ -15,6 +15,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/styles/main.css">
 
+    <!-- Portfolio-specific CSS -->
+    <link rel="stylesheet" href="/styles/portfolio.css">
+
     <script src="/scripts/main.js"></script>
 </head>
 
@@ -33,7 +36,39 @@
     </header>
 
     <main class="container">
-        Someday
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <!-- 1. Leetcode -->
+            <div class="project-card">
+                <img src="/assets/Leetcode.png" alt="Leetcode logo" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title"><a href="https://github.com/bassetmatt/leetcode" target="_blank"
+                            rel="noopener noreferrer">Leetcode</a></h3>
+                    <p class="project-summary">Leetcode problems that I solve in Rust, C++, Python and Java.</p>
+                </div>
+            </div>
+
+            <!-- Neuro DB -->
+            <div class="project-card">
+                <img src="/assets/neuro.jpg" alt="Neuro-Sama" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title"><a href="https://github.com/bassetmatt/Neuro-Sings" target="_blank"
+                            rel="noopener noreferrer">Neuro Singing DB</a></h3>
+                    <p class="project-summary">Music database, audio files metadata management in Python</p>
+                </div>
+            </div>
+
+            <!-- Typst DnD -->
+            <div class="project-card">
+                <img src="/assets/typstnd.jpg" alt="Typst + DnD Logo" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Typst DnD Character Sheets</h3>
+                    <p class="project-summary">DnD character memos generated in typst using 5etools' database</p>
+                </div>
+            </div>
+
+            <!-- Add more projects as needed -->
+        </div>
     </main>
 
     <footer>
