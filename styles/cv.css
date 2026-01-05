@@ -1,0 +1,28 @@
+#cv-svg-object {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    background-color: transparent !important;
+}
+
+#cv-svg-container {
+    background-color: transparent !important;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+#download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.typst-doc {
+    background-color: transparent !important;
+}
+
+object[type="image/svg+xml"] {
+    background: none !important;
+}
