@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthieu Basset - Portfolio</title>
-    <!-- Preload Pico CSS -->
-    <link rel="preload" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" as="style"
-        onload="this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-    </noscript>
+    <link rel="icon" href="favicon.ico" type="image/jpeg">
+    <!-- Pico CSS -->
+    <link rel="stylesheet" href="/styles/pico.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/fira_code.css">
 
     <!-- Portfolio-specific CSS -->
     <link rel="stylesheet" href="/styles/portfolio.css">
@@ -25,10 +23,18 @@
     <header>
         <h1>Matthieu Basset</h1>
         <nav>
-            <div class="nav-item"><a href="/">Home</a></div>
-            <div class="nav-item"><a href="/pages/portfolio.html" class="active">Portfolio</a></div>
-            <div class="nav-item"><a href="/pages/cv.html">CV</a></div>
-            <div class="nav-item"><a href="/pages/other.html">Other</a></div>
+            <div class="nav-item">
+                <a href="/">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="/pages/portfolio.html" class="active">Portfolio</a>
+            </div>
+            <div class="nav-item">
+                <a href="/pages/cv.html">CV</a>
+            </div>
+            <div class="nav-item">
+                <a href="/pages/other.html">Other</a>
+            </div>
             <div class="nav-item">
                 <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
             </div>
@@ -40,11 +46,21 @@
         <div class="portfolio-grid">
             <!-- 1. Leetcode -->
             <div class="project-card">
-                <img src="/assets/Leetcode.png" alt="Leetcode logo" class="project-image">
+                <img src="/assets/logo/leetcode.svg" alt="Leetcode logo" class="project-image">
                 <div class="project-content">
-                    <h3 class="project-title"><a href="https://github.com/bassetmatt/leetcode" target="_blank"
-                            rel="noopener noreferrer">Leetcode</a></h3>
+                    <h3 class="project-title">Leetcode</h3>
                     <p class="project-summary">Leetcode problems that I solve in Rust, C++, Python and Java.</p>
+                </div>
+                <div class="project-logos">
+                    <div>
+                        <a href="https://github.com/bassetmatt/leetcode" target="_blank" rel="noopener noreferrer">
+                            <img src="/assets/logo/github-mark.svg" alt="Github Logo">
+                        </a>
+                    </div>
+                    <div><img src="/assets/logo/rust.svg" alt="Rust Logo"></div>
+                    <div><img src="/assets/logo/c++.svg" alt="C++ Logo"></div>
+                    <div><img src="/assets/logo/python.svg" alt="Python Logo"></div>
+                    <div><img src="/assets/logo/java.svg" alt="Java Logo"></div>
                 </div>
             </div>
 
@@ -52,9 +68,16 @@
             <div class="project-card">
                 <img src="/assets/neuro.jpg" alt="Neuro-Sama" class="project-image">
                 <div class="project-content">
-                    <h3 class="project-title"><a href="https://github.com/bassetmatt/Neuro-Sings" target="_blank"
-                            rel="noopener noreferrer">Neuro Singing DB</a></h3>
+                    <h3 class="project-title">Neuro Singing DB</h3>
                     <p class="project-summary">Music database, audio files metadata management in Python</p>
+                </div>
+                <div class="project-logos">
+                    <div>
+                        <a href="https://github.com/bassetmatt/Neuro-Sings" target="_blank" rel="noopener noreferrer">
+                            <img src="/assets/logo/github-mark.svg" alt="Github Logo">
+                        </a>
+                    </div>
+                    <div><img src="/assets/logo/python.svg" alt="Python Logo"></div>
                 </div>
             </div>
 
@@ -65,14 +88,21 @@
                     <h3 class="project-title">Typst DnD Character Sheets</h3>
                     <p class="project-summary">DnD character memos generated in typst using 5etools' database</p>
                 </div>
+                <div class="project-logos">
+                    <div><img src="/assets/logo/typst.jpg" alt="Typst Logo"></div>
+                </div>
             </div>
 
-            <!-- Add more projects as needed -->
         </div>
     </main>
 
     <footer>
-        <p>© 2026 Matthieu Basset</p>
+        <div>
+            © 2026 Matthieu Basset
+        </div>
+        <div>
+            <a href="/pages/credits.html">Credits</a>
+        </div>
     </footer>
 </body>
 

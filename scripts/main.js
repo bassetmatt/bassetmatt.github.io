@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (svgObject) {
         const updateSvg = () => {
             const theme = document.documentElement.getAttribute('data-theme');
-            svgObject.setAttribute('data', theme === 'light' ? '/assets/CV-EN-light.svg' : '/assets/CV-EN-dark.svg');
+            svgObject.setAttribute('data', theme === 'light' ? '/assets/CV/CV-EN-light.svg' : '/assets/CV/CV-EN-dark.svg');
         };
         updateSvg();
         new MutationObserver(updateSvg).observe(document.documentElement, {

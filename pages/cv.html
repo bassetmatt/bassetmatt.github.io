@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthieu Basset - CV</title>
-    <!-- Preload Pico CSS -->
-    <link rel="preload" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" as="style"
-        onload="this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-    </noscript>
+    <link rel="shortcut icon" href="favicon.ico" type="image/jpeg">
+    <!-- Pico CSS -->
+    <link rel="stylesheet" href="/styles/pico.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/fira_code.css">
     <link rel="stylesheet" href="/styles/cv.css">
 
     <script src="/scripts/main.js"></script>
@@ -23,10 +21,18 @@
     <header>
         <h1>Matthieu Basset</h1>
         <nav>
-            <div class="nav-item"><a href="/">Home</a></div>
-            <div class="nav-item"><a href="/pages/portfolio.html">Portfolio</a></div>
-            <div class="nav-item"><a href="/pages/cv.html" class="active">CV</a></div>
-            <div class="nav-item"><a href="/pages/other.html">Other</a></div>
+            <div class="nav-item">
+                <a href="/">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="/pages/portfolio.html">Portfolio</a>
+            </div>
+            <div class="nav-item">
+                <a href="/pages/cv.html" class="active">CV</a>
+            </div>
+            <div class="nav-item">
+                <a href="/pages/other.html">Other</a>
+            </div>
             <div class="nav-item">
                 <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
             </div>
@@ -34,31 +40,75 @@
     </header>
 
     <main class="container">
+        <h2>Curriculum Vitae - One page version</h2>
         <article>
-            <h2>Curriculum Vitae</h2>
-
             <!-- SVG CV (switches between light/dark) -->
             <div id="cv-svg-container">
-                <object data="/assets/CV-EN-dark.svg" type="image/svg+xml" id="cv-svg-object"></object>
-            </div>
-
-            <!-- Download buttons -->
-            <div id="download-buttons">
-                <a href="/assets/CV-FR.pdf" download="Matthieu_Basset_CV_Light.pdf" role="button" class="secondary">
-                    Download PDF (FR)
-                </a>
-                <a href="/assets/CV-EN.pdf" download="Matthieu_Basset_CV_Dark.pdf" role="button" class="secondary">
-                    Download PDF (EN)
-                </a>
+                <object data="/assets/CV/CV-EN-dark.svg" type="image/svg+xml" id="cv-svg-object"></object>
             </div>
         </article>
+
+        <!-- Download buttons -->
+        <div class="download-buttons">
+            <a href="/assets/CV/CV-FR.pdf" download="Matthieu_Basset_CV_French.pdf" role="button" class="secondary">
+                Download PDF (FR)
+            </a>
+            <a href="/assets/CV/CV-EN.pdf" download="Matthieu_Basset_CV_English.pdf" role="button" class="secondary">
+                Download PDF (EN)
+            </a>
+        </div>
+
+        <h2>In-depth version [WIP]</h2>
+        <details>
+            <summary>
+                <h3>Professional experiences</h3>
+            </summary>
+            <h4>4-months internship @ BETA Technologies</h4>
+            <div class="download-buttons">
+                <a href="/assets/pdf/beta-report.pdf" download="Internship_Report.pdf" role="button" class="secondary">
+                    My report (FR)
+                </a>
+            </div>
+            <h4>Research internship</h4>
+            <div class="download-buttons">
+                <a href="/assets/pdf/article-research.pdf" download="Internship_Article.pdf" role="button"
+                    class="secondary">
+                    Article (report) (EN)
+                </a>
+            </div>
+
+        </details>
+        <details>
+            <summary>
+                <h3> School</h3>
+            </summary>
+            <h4>Polytechnique Montreal</h4>
+            <h4>Supaero</h4>
+            <h4>CPGE</h4>
+            <h4>High-school and before</h4>
+        </details>
+        <details>
+            <summary>
+                <h3> Clubs</h3>
+            </summary>
+        </details>
+        <details>
+            <summary>
+                <h3> Skills</h3>
+            </summary>
+        </details>
+
+
     </main>
 
     <footer>
-        <p>© 2026 Matthieu Basset</p>
+        <div>
+            © 2026 Matthieu Basset
+        </div>
+        <div>
+            <a href="/pages/credits.html">Credits</a>
+        </div>
     </footer>
-
-
 </body>
 
 </html>

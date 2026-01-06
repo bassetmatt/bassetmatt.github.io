@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthieu Basset</title>
-    <!-- Preload Pico CSS -->
-    <link rel="preload" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" as="style"
-        onload="this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-    </noscript>
+    <link rel="shortcut icon" href="favicon.ico" type="image/jpeg">
+    <!-- Pico CSS -->
+    <link rel="stylesheet" href="/styles/pico.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/styles/main.css">
-
+    <link rel="stylesheet" href="/styles/fira_code.css">
     <script src="/scripts/main.js"></script>
 </head>
 
@@ -22,10 +19,18 @@
     <header>
         <h1>Matthieu Basset</h1>
         <nav>
-            <div class="nav-item"><a href="/" class="active">Home</a></div>
-            <div class="nav-item"><a href="/pages/portfolio.html">Portfolio</a></div>
-            <div class="nav-item"><a href="/pages/cv.html">CV</a></div>
-            <div class="nav-item"><a href="/pages/other.html">Other</a></div>
+            <div class="nav-item">
+                <a href="/" class="active">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="/pages/portfolio.html">Portfolio</a>
+            </div>
+            <div class="nav-item">
+                <a href="/pages/cv.html">CV</a>
+            </div>
+            <div class="nav-item">
+                <a href="/pages/other.html">Other</a>
+            </div>
             <div class="nav-item">
                 <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
             </div>
@@ -57,9 +62,13 @@
     </main>
 
     <footer>
-        <p>© 2026 Matthieu Basset</p>
+        <div>
+            © 2026 Matthieu Basset
+        </div>
+        <div>
+            <a href="/pages/credits.html">Credits</a>
+        </div>
     </footer>
-
 
 </body>
 

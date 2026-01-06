@@ -2,23 +2,30 @@
     --primary: #e7a85c;
     --primary-hover: #d19640;
     --primary-inverse: #212529;
+    --primary-white: #f8f9fa;
 }
 
 /* Light theme */
 [data-theme="light"] {
-    --background: #f8f9fa;
-    --text: #212529;
+    --background: var(--primary-white);
+    --text: var(--primary-inverse);
 }
 
 /* Dark theme */
 [data-theme="dark"] {
-    --background: #212529;
-    --text: #f8f9fa;
+    --background: var(--primary-inverse);
+    --text: var(--primary-white);
 }
 
 body {
     background-color: var(--background);
     color: var(--text);
+    font-family: 'Fira Code';
+    font-variant-ligatures: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Code';
 }
 
 header, footer {
@@ -28,7 +35,7 @@ header, footer {
 }
 
 .container {
-    max-width: 800px;
+    /* max-width: 800px; */
     margin: 0 auto;
     padding: 1rem;
 }
@@ -69,7 +76,7 @@ header nav {
 
 /* Active state for the flex item */
 .nav-item a.active {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 
@@ -98,4 +105,17 @@ header nav {
 /* Ensure the button doesn't stand out too much */
 #theme-toggle {
     opacity: 0.8;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: var(--primary-inverse);
+}
+
+footer a.active {
+    font-weight: bold;
 }
