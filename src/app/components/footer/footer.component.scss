@@ -1,0 +1,13 @@
+
+.footer-container {
+  background-color: var(--navbar-bg-color-light);
+  font-family: "Fira Code", monospace;
+
+  .footer-items-container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 50px;
+  }
+}
